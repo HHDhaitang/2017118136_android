@@ -23,4 +23,10 @@ public class FirstActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }}
+    }
+    @Override
+    protected void onRestart(){
+        super.onRestart();
+        Log.d("FirstActivity","onRestart");
+    }
+}
