@@ -8,19 +8,20 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class FirstActivity extends AppCompatActivity {
+public class SecondActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("FirstActivity",this.toString());
-        setContentView(R.layout.first_layout);
-        Button button1=(Button)findViewById(R.id.button_1);
-        button1.setOnClickListener(new View.OnClickListener() {
+        Log.d("SecondActivity",this.toString());
+        setContentView(R.layout.activity_second);
+        Button button2=(Button)findViewById(R.id.button_2);
+        button2.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+            public void onClick(View v){
+                Intent intent=new Intent(SecondActivity.this,FirstActivity.class);
                 startActivity(intent);
             }
         });
-    }}
+    }
+}
