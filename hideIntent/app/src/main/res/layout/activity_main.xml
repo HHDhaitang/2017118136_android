@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击按钮召唤浏览器，地图，拨号">
+
+    </TextView>
+    <Button
+    android:id="@+id/button_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="召唤浏览器"/>
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="召唤拨号"/>
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="召唤地图"/>
+
+</LinearLayout>
